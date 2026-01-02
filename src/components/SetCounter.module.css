@@ -1,0 +1,54 @@
+
+.setCounter {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+}
+
+.setCounter input {
+  width: 150px;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.setCounter input:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
+}
+
+.setCounter button {
+  padding: 12px 18px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  background-color: #16a34a;
+  color: white;
+  transition: background-color 0.2s ease, transform 0.15s ease;
+}
+
+.setCounter button:hover {
+  background-color: #15803d;
+  transform: translateY(-2px);
+}
+
+.setCounter button:active {
+  transform: translateY(0);
+}
+
+/* 📱 Mobile */
+@media (max-width: 480px) {
+  .setCounter {
+    flex-direction: column;
+  }
+
+  .setCounter input,
+  .setCounter button {
+    width: 100%;
+  }
+}
+

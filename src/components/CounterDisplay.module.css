@@ -1,0 +1,35 @@
+
+.display {
+  max-width: 450px;
+  margin: 60px auto 30px auto;
+  padding: 30px;
+  border-radius: 12px;
+  background-color: #f9fafb;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.display h1 {
+  font-size: 38px;
+  margin-bottom: 10px;
+  color: #1f2937;
+}
+
+.limit {
+  margin-top: 10px;
+  color: #dc2626;
+  font-weight: 600;
+}
+
+/* 📱 Mobile */
+@media (max-width: 480px) {
+  .display {
+    margin: 30px 16px;
+    padding: 20px;
+  }
+
+  .display h1 {
+    font-size: 30px;
+  }
+}
+

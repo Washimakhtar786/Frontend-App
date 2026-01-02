@@ -1,0 +1,49 @@
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.actions button {
+  padding: 14px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  background-color: #2563eb;
+  color: white;
+  transition: transform 0.15s ease, background-color 0.2s ease;
+}
+
+.actions button:hover:not(:disabled) {
+  background-color: #1d4ed8;
+  transform: translateY(-2px);
+}
+
+.actions button:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.actions button:disabled {
+  background-color: #9ca3af;
+  cursor: not-allowed;
+}
+
+.reset {
+  background-color: #f59e0b;
+}
+
+.reset:hover:not(:disabled) {
+  background-color: #d97706;
+}
+
+/* 📱 Mobile */
+@media (max-width: 480px) {
+  .actions button {
+    width: 100%;
+  }
+}
+
